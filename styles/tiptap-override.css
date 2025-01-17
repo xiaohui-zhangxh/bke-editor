@@ -1,0 +1,33 @@
+/* 编辑区域样式 */
+
+.tiptap.ProseMirror {
+  padding: 1rem;
+  outline: none;
+  background-color: var(--bke-bgcolor);
+  transition: background-color 0.3s ease;
+}
+
+.tiptap.ProseMirror:hover,
+.tiptap.ProseMirror:focus-visible {
+  background-color: var(--bke-editing-bgcolor);
+}
+
+.tiptap.ProseMirror > * + * {
+  margin-top: 0.75em;
+}
+
+.tiptap.ProseMirror p {
+  margin: 0;
+}
+
+.ProseMirror code {
+  border-radius: 0.125rem;
+  background-color: #e2e8f0;
+  box-decoration-break: clone;
+  padding: 0.25rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  color: #b91c1c;
+  text-wrap: wrap;
+  font-size: 90%;
+}

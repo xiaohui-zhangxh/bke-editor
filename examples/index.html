@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baklib Editor</title>
+  <link rel="stylesheet" href="../styles/bke.css">
+  <link rel="stylesheet" href="../styles/tiptap-override.css">
+  <script src="../dist/index.js"></script>
+</head>
+<body>
+  <h1>Baklib Editor</h1>
+
+  <bke-editor
+    style="
+      height: 300px;
+    "
+    placeholder="开始输入..."
+    content="<p>你好,这是<b>一个富文本编辑器!</b></p><p>这是一个<code>代码块</code></p>"
+    toolbar="yes"
+    statusBar="yes"
+  ></bke-editor>
+</body>
+</html>
