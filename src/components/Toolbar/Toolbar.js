@@ -86,7 +86,7 @@ export class Toolbar extends LitElement {
   }
 
   render() {
-    console.log('render toolbar', this._updateCounter);
+    // console.log('render toolbar', this._updateCounter);
     return html`
       <div part="wrapper" class="wrapper">
         <slot>

@@ -12,12 +12,22 @@
   background-color: var(--bke-editing-bgcolor);
 }
 
+bke-editor:has(bke-block-menu) .tiptap.ProseMirror {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .tiptap.ProseMirror > * + * {
   margin-top: 0.75em;
 }
 
 .tiptap.ProseMirror p {
   margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.ProseMirror .ProseMirror-selectednode {
+  outline: 3px solid var(--bke-selected-outline-color);
 }
 
 .ProseMirror code {
@@ -30,4 +40,29 @@
   color: #b91c1c;
   text-wrap: wrap;
   font-size: 90%;
+}
+
+.ProseMirror pre {
+  display: block;
+  white-space: pre-wrap;
+  border-radius: 0.25rem;
+  padding: .75rem;
+  background-color: #e2e8f0;
+}
+
+.ProseMirror pre > code {
+  background-color: inherit;
+  overflow-wrap: anywhere;
+  padding: 0;
+  margin: 0;
+}
+
+.ProseMirror img {
+  max-width: 100%;
+}
+
+.ProseMirror blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+  border-radius: 4px;
 }

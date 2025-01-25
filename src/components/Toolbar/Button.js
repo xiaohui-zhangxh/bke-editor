@@ -72,9 +72,6 @@ export class Button extends LitElement {
     const classes = {
       'active': button?.isActive?.(this.editor) || false
     }
-    if(this.name == 'bold') {
-      console.log('render button', this.name, this.key, classes);
-    }
     if (button) {
       return html`<slot name="bke-toolbar-button-${this.name}" class=${classMap(classes)} @click=${button.onClick(this.editor)}>${button.icon}</slot>`
     }else{

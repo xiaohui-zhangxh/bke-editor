@@ -3,7 +3,6 @@ export const icon = html`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24
 
 export const onClick = (editor) => {
   return () => {
-    console.log('undo', editor);
     if(editor){
       editor.chain().focus().undo().run();
     }
